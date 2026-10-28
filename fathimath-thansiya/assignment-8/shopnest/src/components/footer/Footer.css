@@ -171,9 +171,40 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 620px) {
+  .footer {
+    margin-top: 48px;
+  }
+
   .footer-top {
     grid-template-columns: 1fr;
+    gap: 20px;
+    padding-block: 28px 18px;
+  }
+
+  .footer-brand {
+    margin-bottom: 0;
+  }
+
+  .footer-column,
+  .footer-column-newsletter {
+    display: none;
+  }
+
+  .footer-blurb {
+    max-width: none;
+  }
+
+  .footer-newsletter {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 12px;
+  }
+
+  .footer-newsletter button {
+    width: 100%;
+    border-radius: 999px;
+    height: 42px;
   }
 
   .footer-bottom-inner {

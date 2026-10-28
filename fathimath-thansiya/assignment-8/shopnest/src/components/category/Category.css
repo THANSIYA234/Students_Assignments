@@ -80,6 +80,15 @@
   flex-wrap: wrap;
   gap: 8px;
 }
+
+.category-filter--desktop {
+  display: flex;
+}
+
+.category-filter--mobile {
+  display: none;
+}
+
 .category-filter-chip {
   display: inline-flex;
   align-items: center;
@@ -106,6 +115,19 @@
 .category-filter-count {
   font-size: 0.76rem;
   opacity: 0.75;
+}
+
+.category-filter--mobile select {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  outline: none;
 }
 
 @media (max-width: 1100px) {
@@ -135,5 +157,14 @@
 
   .category-showcase__label {
     font-size: 0.78rem;
+  }
+
+  .category-filter--desktop {
+    display: none;
+  }
+
+  .category-filter--mobile {
+    display: block;
+    width: 100%;
   }
 }

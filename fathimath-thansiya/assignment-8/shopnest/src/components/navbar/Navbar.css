@@ -197,8 +197,16 @@
 
 @media (max-width: 820px) {
   .announcement-bar-inner {
-    gap: 6px 22px;
+    gap: 6px 16px;
     font-size: 0.76rem;
+  }
+
+  .announcement-bar-inner span:nth-child(n + 2) {
+    display: none;
+  }
+
+  .announcement-bar-inner {
+    padding-block: 8px;
   }
 
   .navbar-toggle {
@@ -251,6 +259,17 @@
 }
 
 @media (max-width: 560px) {
+  .announcement-bar-inner {
+    justify-content: center;
+    text-align: center;
+    padding-inline: 10px;
+    font-size: 0.7rem;
+  }
+
+  .announcement-bar-inner span {
+    white-space: nowrap;
+  }
+
   .brand-text small {
     display: none;
   }

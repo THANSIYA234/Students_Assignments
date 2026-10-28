@@ -205,6 +205,17 @@
   }
 }
 
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+}
+
 /* rating*/
 
 .rating-star {

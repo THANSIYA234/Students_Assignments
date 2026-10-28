@@ -244,3 +244,37 @@
     align-self: flex-start;
   }
 }
+
+@media (max-width: 560px) {
+  .breadcrumb {
+    gap: 6px;
+    font-size: 0.75rem;
+  }
+
+  .product-detail-price-current {
+    font-size: 1.7rem;
+  }
+
+  .product-detail-buy {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .product-detail-buy > * {
+    width: 100%;
+  }
+
+  .product-detail-add,
+  .product-detail-buy .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .product-detail-assurance {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding-top: 18px;
+  }
+}
